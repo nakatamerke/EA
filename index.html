@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekrem Atakan | AI Creator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #0a1128;
+            --purple: #6d28d9;
+            --text: #ffffff;
+            --glass: rgba(255, 255, 255, 0.05);
+            --glass-hover: rgba(255, 255, 255, 0.12);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at top, #1e1b4b, var(--navy));
+            color: var(--text);
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Profile Header */
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid var(--purple);
+            margin-bottom: 20px;
+            box-shadow: 0 0 30px rgba(109, 40, 217, 0.3);
+            /* Replace with your actual image URL after hosting */
+            background: #222; 
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .bio {
+            font-size: 0.95rem;
+            color: #a5b4fc;
+            margin-bottom: 40px;
+            font-weight: 300;
+            line-height: 1.4;
+        }
+
+        /* Link System */
+        .links-stack {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 18px;
+            text-decoration: none;
+            color: white;
+            border-radius: 16px;
+            font-size: 1rem;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            background: var(--glass);
+        }
+
+        .btn:hover {
+            transform: scale(1.03);
+            background: var(--glass-hover);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Priority Link - Bolder & Larger */
+        .priority {
+            background: linear-gradient(135deg, #7c3aed, #4f46e5);
+            font-weight: 600;
+            border: none;
+            padding: 22px;
+            box-shadow: 0 10px 25px rgba(79, 70, 229, 0.4);
+            margin-bottom: 6px;
+        }
+
+        .priority:hover {
+            box-shadow: 0 15px 30px rgba(79, 70, 229, 0.6);
+            background: linear-gradient(135deg, #8b5cf6, #6366f1);
+        }
+
+        footer {
+            margin-top: auto;
+            padding-top: 60px;
+            font-size: 0.85rem;
+            opacity: 0.5;
+            letter-spacing: 0.05em;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Animation */
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .wrapper { animation: slideUp 0.6s ease-out; }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <img src="YOUR_IMAGE_URL" alt="Ekrem Atakan" class="profile-pic">
+        
+        <h1>Ekrem Atakan</h1>
+        <p class="bio">Architecting the future of digital content through the lens of AI.</p>
+
+        <div class="links-stack">
+            <a href="https://www.ekrematakan.com" class="btn priority">
+                Visit Official Website
+            </a>
+
+            <a href="https://sunizemin.vercel.app" class="btn">
+                Suni Zemin
+            </a>
+            
+            <a href="https://penaltigol.vercel.app" class="btn">
+                Penaltı Gol
+            </a>
+
+            <a href="https://buymeacoffee.com/ekrematakan" class="btn">
+                Support My Work
+            </a>
+        </div>
+
+        <footer>
+            <a href="https://instagram.com/ekrematakan" target="_blank">@ekrematakan</a>
+        </footer>
+    </div>
+
+</body>
+</html>
