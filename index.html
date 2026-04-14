@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,20 +40,20 @@
             align-items: center;
         }
 
-        /* Profile Header */
+        /* Profil Fotoğrafı Düzenlemesi */
         .profile-pic {
-            width: 100px;
-            height: 100px;
+            width: 110px;
+            height: 110px;
             border-radius: 50%;
             border: 2px solid var(--purple);
             margin-bottom: 20px;
             box-shadow: 0 0 30px rgba(109, 40, 217, 0.3);
-            https://ibb.co/4g1N78br
-            background: #222; 
+            object-fit: cover;
+            background-color: #111;
         }
 
         h1 {
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             font-weight: 600;
             margin-bottom: 8px;
             letter-spacing: -0.02em;
@@ -67,7 +67,7 @@
             line-height: 1.4;
         }
 
-        /* Link System */
+        /* Link Kartları */
         .links-stack {
             width: 100%;
             display: flex;
@@ -95,14 +95,13 @@
             border-color: rgba(255, 255, 255, 0.3);
         }
 
-        /* Priority Link - Bolder & Larger */
+        /* Öncelikli Link (A/B Test Odaklı) */
         .priority {
             background: linear-gradient(135deg, #7c3aed, #4f46e5);
             font-weight: 600;
             border: none;
             padding: 22px;
             box-shadow: 0 10px 25px rgba(79, 70, 229, 0.4);
-            margin-bottom: 6px;
         }
 
         .priority:hover {
@@ -111,11 +110,10 @@
         }
 
         footer {
-            margin-top: auto;
-            padding-top: 60px;
+            margin-top: 60px;
+            padding-bottom: 20px;
             font-size: 0.85rem;
             opacity: 0.5;
-            letter-spacing: 0.05em;
         }
 
         footer a {
@@ -124,7 +122,7 @@
             font-weight: 600;
         }
 
-        /* Animation */
+        /* Giriş Animasyonu */
         @keyframes slideUp {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -136,14 +134,14 @@
 <body>
 
     <div class="wrapper">
-        <img src="YOUR_IMAGE_URL" alt="Ekrem Atakan" class="profile-pic">
+        <img src="https://i.ibb.co/Ldk0YvC/profile.jpg" alt="Ekrem Atakan" class="profile-pic">
         
         <h1>Ekrem Atakan</h1>
         <p class="bio">Architecting the future of digital content through the lens of AI.</p>
 
         <div class="links-stack">
             <a href="https://www.ekrematakan.com" class="btn priority">
-                Visit Official Website
+                Resmi Web Sitemi Ziyaret Et
             </a>
 
             <a href="https://sunizemin.vercel.app" class="btn">
@@ -155,7 +153,7 @@
             </a>
 
             <a href="https://buymeacoffee.com/ekrematakan" class="btn">
-                Support My Work
+                ☕ Çalışmalarımı Destekle
             </a>
         </div>
 
